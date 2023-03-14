@@ -1,0 +1,145 @@
+:root{
+  --job-cl:#F3BF99;
+  --light-cl:#F5F5F5;
+  --light-cl-2:#fff;
+  --btn-cl:#374151;
+  --linkedin-cl:#5093E2;
+  --footer-bg:#161619;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #282D35;
+  font-family: 'Inter';
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  width: min(100%,320px);
+  box-shadow: 0 0 10px #0004; 
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #1A1B21;
+}
+
+.card__img{
+  width: 100%;
+  height: 290px;
+}
+
+.card__title,
+.card__job,
+.card__web{
+  text-align: center;
+}
+
+.card__title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--light-cl-2);
+  margin-bottom: 0;
+}
+
+.card__job{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--job-cl);
+  margin-top: 8px;
+}
+
+.card__web{
+  display: block;
+  text-decoration:none;
+  color: var(--light-cl);
+  font-size: 1rem;
+}
+
+.card__btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap:1rem;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-cl-2);
+  width: 115px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 16px;
+  color:var(--btn-cl);
+  gap: 8px;
+  border-radius: 6px;
+  padding: 9px 13px 9px 11px;
+}
+
+.btn__img{
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 0px;
+}
+
+.btn--blue{
+  background-color: var(--linkedin-cl);
+  color: var(--light-cl-2);
+}
+
+
+.card__body{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin:15px auto;
+}
+
+.body__title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 150%;
+  margin-bottom: 0;
+  color:  var(--light-cl);
+}
+
+.body__text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #DCDCDC;
+  margin-top: 5px;
+}
+
+.card__footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  gap:24px;
+  background-color: var(--footer-bg);
+}
+
+.footer__social{
+  width: 25px;
+  height: 25px;
+}
